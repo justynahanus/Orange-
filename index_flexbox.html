@@ -5,7 +5,7 @@
     <title>Orange by The Awwwesomes</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <!--    <link rel="stylesheet" href="css/grid.css" type="text/css">-->
-    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="stylesheet" href="css/styles_flexbox.css" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Radley|Space+Mono" rel="stylesheet">
 </head>
 <body>
@@ -28,7 +28,7 @@
         </nav>
         <h1 class="header__banner">creative soul</h1>
         <p class="header__text">meet me and my works<br>designer & content strategist from warsaw</p>
-        <p class="header__text--small">layout by The Awwwwesomes</p>
+        <p class="header__layout-by">layout by The Awwwwesomes</p>
     </header>
     <nav class="socialmedia-nav header__socialmedia-nav">
         <a><img src="img/facebook.svg" alt="facebook icon"/></a>
@@ -61,39 +61,50 @@
                 <h2 class="section__title">projects</h2>
                 <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
             </div>
-            
-            <div class="section-projects__firstCol">
-                <img class="section-projects__image" src="img/vintage-house.jpg" alt="the vintage house"/>
-                <h3 class="section-projects__title">+ the vintage house</h3>
-                <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+            <div class="flex-container">
+                <div class="projects-column">
+                    <img class="section-projects__image" src="img/vintage-house.jpg" alt="the vintage house"/>
+                    <h3 class="section-projects__title">+ the vintage house</h3>
+                    <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+                </div>
+
+                <div class="projects-column">
+                    <img class="section-projects__image" src="img/colors-of-interior.jpg" alt="colors of interior"/>
+                    <h3 class="section-projects__title">+ colors of interior</h3>
+                    <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+                </div>
+
+                <div class="projects-column">
+                    <h3 class="section-projects__title">+ the greenery</h3>
+                    <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+
+                    <h3 class="section-projects__title">+ another project</h3>
+                    <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+
+                    <h3 class="section-projects__title">+ and one more</h3>
+                    <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
+                </div>
             </div>
             
-            <div class="section-projects__secondCol">
-                <img class="section-projects__image" src="img/colors-of-interior.jpg" alt="colors of interior"/>
-                <h3 class="section-projects__title">+ colors of interior</h3>
-                <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-            </div>
-
-            <div class="section-projects__thirdCol">
-                <h3 class="section-projects__title">+ the greenery</h3>
-                <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-
-                <h3 class="section-projects__title">+ another project</h3>
-                <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-
-                <h3 class="section-projects__title">+ and one more</h3>
-                <p class="section__content">Fashion axe austin DIY wolf 3 wolf moon, direct trade YOLO tote bag paleo blog.</p>
-            </div>
         </section>
         <section class="section section-contact" id="contact">
             <div class="section-contact__title">
-                <h2 class="section__title">for more updates follow me on <span class= "section__title--color">instagram</span></h2>
+                <h2 class="section__title">for more updates follow me on <span class= "section__title--primary">instagram</span></h2>
             </div>
-            
-            <img class="section-contact__insta insta--1" src="img/instagram1.jpg" alt="stairs"/>
-            <img class="section-contact__insta insta--2" src="img/instagram2.jpg" alt="stripes"/>
-            <img class="section-contact__insta insta--3" src="img/instagram3.jpg" alt="tunnel"/>
-            <img class="section-contact__insta insta--4" src="img/instagram4.jpg" alt="interior"/>
+            <div class="flex-container">
+               <div>
+                   <img class="insta-image" src="img/instagram1.jpg" alt="stairs"/>
+                </div>
+                <div>
+                    <img class="insta-image" src="img/instagram2.jpg" alt="stripes"/>
+                </div>
+                <div>
+                    <img class="insta-image" src="img/instagram3.jpg" alt="tunnel"/>
+                </div>
+                <div>
+                    <img class="insta-image" src="img/instagram4.jpg" alt="interior"/>  
+                </div>
+            </div>
             
             <div class="section-contact__text">
                 <a href=# class="section__link">@thisismyinstagram</a>
