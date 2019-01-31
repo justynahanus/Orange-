@@ -49,7 +49,7 @@ body {
 .menu-link {
     text-decoration: none;
     color: #000000;
-    padding: 0 3rem;
+    padding: 0 2rem;
 }
 
 .primary-nav-list__item {
@@ -251,6 +251,27 @@ body {
         align-items: center;
     }
     
+    .insta-image {
+        width: 100%;
+    }
     
+    .projects-column {
+        padding: 2rem 0 0 0;
+    }
 }
 
+@media screen and (max-width: 800px){
+   .header__primary-nav-list {
+    display: flex;
+    justify-content: flex-end;
+    max-width: 450px;
+    padding: 3rem 0;
+}
+}
+
+@media screen and (max-width: 1340px){
+    .header__socialmedia-nav {
+        position: absolute;
+        top:0;
+    }
+}
